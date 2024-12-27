@@ -1,0 +1,94 @@
+body{
+    background-color: #fff5e1;
+}
+.Word-wolf{
+    margin-top: 150px;
+}
+.title{
+    background-color: #dddddd;
+    padding: 10px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.members{
+    text-align: center;
+}
+.members h2{
+    margin-top: 50px;
+}
+.player-count{
+    margin-top: 50px;
+}
+.player-count select {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+}
+.start-button {
+    margin-top: 50px;
+    text-align: center;
+}
+.start-button button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+}
+#first-words-page {
+    display: none;
+}
+.words {
+    margin-top: 50px;
+    text-align: center;
+}
+.words button {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+}
+.words-page {
+    margin-top: 150px;
+}
+.words-page .words {
+    margin-top: 50px;
+    text-align: center;
+}
+#show-word-btn {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+.last-words-page{
+    text-align: center;
+    margin-top: 50px;
+}
+.last-words-page button {
+    margin-top: 50px;
+    width: 220px;
+    height: 60px;
+    font-size: 18px;
+    padding: 5px;
+}
+.number-page {
+    text-align: center;
+}
+.number-page button {
+    margin-top: 50px;
+    width: 250px;
+    height: 80px;
+    font-size: 18px;
+    padding: 5px;
+}
+.wolf-number {
+    margin-top: 80px;
+}
+.ans-page {
+    text-align: center;
+}
+.ans-page .ans-words {
+    margin-top: 80px;
+}

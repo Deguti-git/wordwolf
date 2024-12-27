@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ワードウルフ</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <div id="start-page">
+        <div class="Word-wolf">
+            <div class="title">
+                <h1>ワードウルフ</h1>
+            </div>
+            <div class="members">
+                <h2>人数を選択してください</h2>
+                <div class="player-count">
+                    <h3>参加人数 (3〜10人):</h3>
+                    <select id="player-count">
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        <option value="10">10人</option>
+                    </select>
+                </div>
+            <div class="start-button">
+                <button onclick="Gotofirstwordspage()">スタート</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="first-words-page">
+        <div class="Word-wolf">
+            <div class="title">
+                <h1>ワードウルフ</h1>
+            </div>
+            <div class="words">
+                <div id="first-button">
+                    <h2>1人目の方はボタンを押してください</h2>
+                    <button onclick="Firstshowwords()">単語を表示</button>
+                </div>
+                <div id="show" style="display: none;" >
+                    <h2 id="word"></h2>
+                    <h2>単語を確認したら下のボタンを押してください</h2>
+                    <button onclick="Firstgotowordspage()">次へ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="words-page">
+        <div id="words-page" style="display: none;">
+            <div class="title">
+                <h1>ワードウルフ</h1>
+            </div>
+            <div class="words">
+                <h2 id="current-word"></h2>
+                    <h2 id="player-indicator">2人目の方はボタンを押してください</h2>
+                    <button id="show-word-btn" onclick="Showwords()">単語を表示</button>
+                <div id="show-word-container" style="display: none;" >
+                    <h2 id="displayed-word"></h2>
+                    <h2>単語を確認したら下のボタンを押してください</h2>
+                    <button onclick="Gotowordspage()">次へ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-words-page">
+        <div id="last-words-page" style="display: none;">
+            <div class="title">
+                <h1>ワードウルフ</h1>
+            </div>
+            <h2 id="final-word"></h2>
+            <h2>全ての単語が表示されました<br>ゲームを開始してください</h2>
+            <h2>ゲームが終了したら、下のボタンを押して、狼の人の番号を確認してください</h2>
+            <button onclick="Gotonumberpage()">狼の番号を表示</button>
+        </div>
+    </div>
+
+    <div class="number-page">
+        <div id="number-page" style="display: none;">
+            <div class="title">
+                <h1>ワードウルフ</h1>
+            </div>
+            <div class="wolf-number">
+                <h2 id="wolf-position"></h2>
+                <h2>下のボタンを押すと、狼、市民の単語が表示されます</h2>
+                <button onclick="Gotoanspage()">狼と市民の単語を表示</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ans-page">
+        <div id="ans-page" style="display: none;">
+            <div class="title">
+                <h1>ワードウルフ</h1>
+            </div>
+            <div class="ans-words">
+                <h2 id="wolf-word">狼の単語は○○でした</h2>
+                <h2 id="villager-word">市民の単語は○○でした</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
