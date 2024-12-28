@@ -1,6 +1,6 @@
 # wordwolf
 
-URL↓
+URL:
 https://deguti-git.github.io/wordwolf/
 
 日本語：
